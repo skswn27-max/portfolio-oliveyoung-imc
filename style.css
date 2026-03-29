@@ -4732,3 +4732,75 @@ a:hover {
     background: var(--oy-green) !important;
     color: #fff !important;
 }
+
+/* =============================================
+   프로세스 타임라인 (올리브영 스타일)
+   ============================================= */
+.process-detail {
+    margin-top: 32px;
+}
+.process-detail > .detail-label {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.process-timeline {
+    position: relative;
+    padding-left: 28px;
+}
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    bottom: 4px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--oy-green), rgba(67, 176, 42, 0.15));
+    border-radius: 2px;
+}
+.process-tl-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 0;
+}
+.process-tl-item:last-child {
+    padding-bottom: 0;
+}
+.process-tl-dot {
+    position: absolute;
+    left: -24px;
+    top: 22px;
+    width: 12px;
+    height: 12px;
+    background: var(--oy-green);
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px var(--oy-green);
+    flex-shrink: 0;
+    z-index: 1;
+}
+.process-tl-content {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    flex: 1;
+    transition: var(--transition);
+}
+.process-tl-content:hover {
+    border-color: var(--oy-green);
+    box-shadow: 0 2px 12px rgba(67, 176, 42, 0.08);
+}
+.process-tl-content h5 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+.process-tl-content p {
+    font-size: 0.85rem;
+    color: var(--text-sub);
+    line-height: 1.6;
+    margin: 0;
+}
