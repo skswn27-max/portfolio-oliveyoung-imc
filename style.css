@@ -139,7 +139,7 @@
 }
 
 .toc-cat-2 .toc-cat-en {
-    color: rgba(0, 0, 0, 0.45);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .toc-cat-card h3 {
@@ -152,7 +152,7 @@
 }
 
 .toc-cat-2 h3 {
-    color: rgba(0, 0, 0, 0.75);
+    color: white;
 }
 
 /* RE:FEEEL 스타일 하단 카테고리 필 */
@@ -171,8 +171,8 @@
 }
 
 .toc-cat-2 .toc-cat-pill {
-    background: rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 1024px) {
