@@ -13,14 +13,14 @@
     --oy-green-light: #5DC726;
     --oy-green-bg: rgba(67, 176, 42, 0.06);
     --oy-green-bg-medium: rgba(67, 176, 42, 0.12);
-    --oy-mint: #00B8A9;
-    --oy-lime: #9BCE26;
+    --oy-mint: #008C82;
+    --oy-lime: #6B9E00;
 
-    /* 카드 컬러 팔레트 (올리브영 톤) */
-    --refeeel-blue: #43B02A;
-    --refeeel-yellow: #9BCE26;
-    --refeeel-coral: #00B8A9;
-    --refeeel-teal: #2D8C3C;
+    /* 카드 컬러 팔레트 (올리브영 톤, 대비 보장) */
+    --refeeel-blue: #2E8B20;
+    --refeeel-yellow: #6B9E00;
+    --refeeel-coral: #008C82;
+    --refeeel-teal: #1A6B3D;
 
     --accent: #43B02A;
     --accent-hover: #359922;
@@ -105,11 +105,11 @@
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 
-/* 카드 컬러 테마 - 올리브영 */
-.toc-cat-1 { background: #43B02A; }
-.toc-cat-2 { background: #2D8C3C; }
-.toc-cat-3 { background: #00B8A9; }
-.toc-cat-4 { background: #9BCE26; }
+/* 카드 컬러 테마 - 올리브영 (충분한 명암 대비) */
+.toc-cat-1 { background: #2E8B20; }
+.toc-cat-2 { background: #1A6B3D; }
+.toc-cat-3 { background: #008C82; }
+.toc-cat-4 { background: #6B9E00; }
 
 /* RE:FEEEL 도트 */
 .toc-cat-dot {
@@ -4031,10 +4031,10 @@ section {
     margin-bottom: 0;
 }
 
-.cat-hero.cat-2 .cat-hero-back { color: rgba(0, 0, 0, 0.45); }
+.cat-hero.cat-2 .cat-hero-back { color: var(--oy-green); }
 
-.cat-hero-back:hover { color: rgba(255, 255, 255, 0.95); }
-.cat-hero.cat-2 .cat-hero-back:hover { color: rgba(0, 0, 0, 0.75); }
+.cat-hero-back:hover { color: var(--oy-green-dark); }
+.cat-hero.cat-2 .cat-hero-back:hover { color: var(--oy-green-dark); }
 
 .cat-hero-pill {
     display: inline-block;
@@ -4051,8 +4051,8 @@ section {
 }
 
 .cat-hero.cat-2 .cat-hero-pill {
-    background: rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.55);
+    background: var(--oy-green);
+    color: #fff;
 }
 
 .cat-hero h1 {
@@ -4064,7 +4064,7 @@ section {
     margin-bottom: 16px;
 }
 
-.cat-hero.cat-2 h1 { color: rgba(0, 0, 0, 0.75); }
+.cat-hero.cat-2 h1 { color: #222222; }
 
 .cat-hero-desc {
     font-size: 1.05rem;
@@ -4073,7 +4073,7 @@ section {
     line-height: 1.75;
 }
 
-.cat-hero.cat-2 .cat-hero-desc { color: rgba(0, 0, 0, 0.55); }
+.cat-hero.cat-2 .cat-hero-desc { color: #555555; }
 
 /* 카테고리 페이지 - 프로젝트 영역 */
 .cat-projects {
@@ -4427,7 +4427,7 @@ section {
     display: block;
 }
 
-.cat-footer-card.card-2 .cat-footer-card-en { color: rgba(0, 0, 0, 0.4); }
+.cat-footer-card.card-2 .cat-footer-card-en { color: rgba(255, 255, 255, 0.65); }
 
 .cat-footer-card h4 {
     font-size: 1.05rem;
@@ -4437,7 +4437,7 @@ section {
     letter-spacing: -0.02em;
 }
 
-.cat-footer-card.card-2 h4 { color: rgba(0, 0, 0, 0.7); }
+.cat-footer-card.card-2 h4 { color: white; }
 
 .cat-footer-card-arrow {
     font-size: 0.8rem;
@@ -4445,7 +4445,7 @@ section {
     align-self: flex-end;
 }
 
-.cat-footer-card.card-2 .cat-footer-card-arrow { color: rgba(0, 0, 0, 0.3); }
+.cat-footer-card.card-2 .cat-footer-card-arrow { color: rgba(255, 255, 255, 0.5); }
 
 @media (max-width: 768px) {
     .cat-hero {
@@ -4709,4 +4709,26 @@ a {
 }
 a:hover {
     color: var(--oy-green-dark);
+}
+
+/* 올리브영 카테고리 히어로 - 연한 배경에 다크 텍스트 */
+.cat-hero h1 {
+    color: #222222 !important;
+}
+.cat-hero-desc {
+    color: #555555 !important;
+}
+.cat-hero-back,
+.cat-hero-back-fixed {
+    color: var(--oy-green) !important;
+}
+.cat-hero-back:hover {
+    color: var(--oy-green-dark) !important;
+}
+.cat-hero.cat-2 h1 { color: #222222 !important; }
+.cat-hero.cat-2 .cat-hero-desc { color: #555555 !important; }
+.cat-hero.cat-2 .cat-hero-back { color: var(--oy-green) !important; }
+.cat-hero.cat-2 .cat-hero-pill {
+    background: var(--oy-green) !important;
+    color: #fff !important;
 }
