@@ -1,80 +1,79 @@
 /* =============================================
-   Consumer Strategist 포트폴리오 - 카카오스타일 Theme
-   - 지그재그/카카오스타일 컬러 시스템 적용
+   IMC 마케터 포트폴리오 - 올리브영 Theme
+   - CJ 올리브영 앱/웹 디자인 시스템 적용
    ============================================= */
 
-/* CSS 변수 - 카카오스타일 스타일 */
+/* CSS 변수 - 올리브영 컬러 시스템 */
 :root {
-    --primary: #1a1a1a;
-    
-    /* 지그재그/카카오스타일 컬러 시스템 */
-    --zigzag-pink: #FF2D78;
-    --zigzag-pink-70: #FF6A9E;
-    --zigzag-pink-50: #FF9ABB;
-    --zigzag-pink-light: rgba(255, 45, 120, 0.1);
-    --zigzag-pink-medium: rgba(255, 45, 120, 0.15);
-    --zigzag-purple: #7B61FF;
-    --zigzag-purple-light: rgba(123, 97, 255, 0.1);
+    --primary: #222222;
 
-    /* RE:FEEEL 영감 카드 컬러 팔레트 */
-    --refeeel-blue: #6B6BFF;
-    --refeeel-yellow: #F5C842;
-    --refeeel-coral: #D4735E;
-    --refeeel-teal: #4EADAA;
-    
-    --accent: #FF2D78;
-    --accent-hover: #E01A63;
-    --accent-light: rgba(255, 45, 120, 0.1);
-    
+    /* 올리브영 브랜드 컬러 */
+    --oy-green: #43B02A;
+    --oy-green-dark: #359922;
+    --oy-green-light: #5DC726;
+    --oy-green-bg: rgba(67, 176, 42, 0.06);
+    --oy-green-bg-medium: rgba(67, 176, 42, 0.12);
+    --oy-mint: #00B8A9;
+    --oy-lime: #9BCE26;
+
+    /* 카드 컬러 팔레트 (올리브영 톤) */
+    --refeeel-blue: #43B02A;
+    --refeeel-yellow: #9BCE26;
+    --refeeel-coral: #00B8A9;
+    --refeeel-teal: #2D8C3C;
+
+    --accent: #43B02A;
+    --accent-hover: #359922;
+    --accent-light: rgba(67, 176, 42, 0.08);
+
     --bg: #ffffff;
-    --bg-subtle: #FAFAFA;
+    --bg-subtle: #F7F7F7;
     --bg-card: #ffffff;
-    --bg-dark: #1a1a1a;
-    --bg-warm: #FFF5F8;
+    --bg-dark: #222222;
+    --bg-warm: #F0F9ED;
 
-    --text: #1a1a1a;
+    --text: #222222;
     --text-sub: #555555;
-    --text-muted: #888888;
+    --text-muted: #999999;
     --text-light: #ffffff;
 
-    --border: rgba(0, 0, 0, 0.08);
-    --border-strong: rgba(0, 0, 0, 0.15);
-    --border-accent: rgba(255, 45, 120, 0.3);
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --shadow-accent: 0 4px 20px rgba(255, 45, 120, 0.15);
+    --border: #E5E5E5;
+    --border-strong: #D0D0D0;
+    --border-accent: rgba(67, 176, 42, 0.3);
+    --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 2px 12px rgba(0, 0, 0, 0.06);
+    --shadow-accent: 0 4px 20px rgba(67, 176, 42, 0.12);
 
-    --problem-color: #1a1a1a;
-    --solution-color: #FF2D78;
-    --result-color: #FF2D78;
-    --insight-color: #1a1a1a;
+    --problem-color: #222222;
+    --solution-color: #43B02A;
+    --result-color: #43B02A;
+    --insight-color: #222222;
 
-    --radius-lg: 12px;
-    --radius-md: 8px;
-    --radius-sm: 4px;
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    
-    /* 하이라이트 - 지그재그 핑크 */
-    --highlight-yellow: rgba(255, 45, 120, 0.12);
-    --highlight-green: rgba(255, 45, 120, 0.18);
-    --highlight-blue: rgba(123, 97, 255, 0.1);
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --radius-sm: 6px;
+    --transition: all 0.25s ease;
+
+    --highlight-yellow: rgba(67, 176, 42, 0.08);
+    --highlight-green: rgba(67, 176, 42, 0.15);
+    --highlight-blue: rgba(0, 184, 169, 0.08);
 }
 
-/* 텍스트 하이라이트 - 카카오스타일 */
+/* 텍스트 하이라이트 - 올리브영 그린 */
 .highlight {
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
     font-weight: 700;
 }
 
 .hl-yellow {
     font-weight: 700;
     color: var(--text);
-    background: linear-gradient(180deg, transparent 60%, var(--zigzag-pink-light) 60%);
+    background: linear-gradient(180deg, transparent 60%, var(--oy-green-bg-medium) 60%);
 }
 
 .hl-green {
     font-weight: 700;
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
 }
 
 /* =============================================
@@ -106,11 +105,11 @@
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 
-/* 카드 컬러 테마 */
-.toc-cat-1 { background: var(--refeeel-blue); }
-.toc-cat-2 { background: var(--refeeel-yellow); }
-.toc-cat-3 { background: var(--refeeel-coral); }
-.toc-cat-4 { background: var(--refeeel-teal); }
+/* 카드 컬러 테마 - 올리브영 */
+.toc-cat-1 { background: #43B02A; }
+.toc-cat-2 { background: #2D8C3C; }
+.toc-cat-3 { background: #00B8A9; }
+.toc-cat-4 { background: #9BCE26; }
 
 /* RE:FEEEL 도트 */
 .toc-cat-dot {
@@ -233,17 +232,17 @@
 
 .toc-item:hover {
     padding-left: 16px;
-    background: var(--zigzag-pink-light);
+    background: var(--oy-green-bg);
 }
 
 .toc-item.featured {
-    border-left: 3px solid var(--zigzag-pink);
+    border-left: 3px solid var(--oy-green);
     padding-left: 16px;
-    background: var(--zigzag-pink-light);
+    background: var(--oy-green-bg);
 }
 
 .toc-item.featured:hover {
-    background: var(--zigzag-pink-medium);
+    background: var(--oy-green-bg-medium);
 }
 
 .featured-badge {
@@ -255,7 +254,7 @@
     letter-spacing: 0.05em;
     margin-left: 12px;
     padding: 3px 10px;
-    background: var(--zigzag-pink);
+    background: var(--oy-green);
     border-radius: var(--radius-sm);
     vertical-align: middle;
 }
@@ -414,12 +413,12 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 20px 56px;
-    background: rgba(250, 250, 250, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    padding: 16px 56px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     transition: var(--transition);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .navbar.scrolled {
@@ -497,8 +496,8 @@ body {
 
 .nav-menu li.active a,
 .nav-menu a.active {
-    color: var(--text);
-    background: var(--bg);
+    color: var(--oy-green);
+    background: var(--oy-green-bg);
     font-weight: 600;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
@@ -583,7 +582,7 @@ body {
 
 /* RE:FEEEL 스타일 라이트 히어로 */
 .hero.hero-light {
-    background: #FAFAFA;
+    background: linear-gradient(180deg, #F0F9ED 0%, #FFFFFF 60%);
     min-height: 100vh;
 }
 
@@ -648,18 +647,18 @@ body {
 }
 
 .badge-purple {
-    background: #DDD8FF;
-    color: #4A35C8;
+    background: rgba(67, 176, 42, 0.12);
+    color: #2D8C3C;
 }
 
 .badge-teal {
-    background: #C8F0EE;
-    color: #1A7C79;
+    background: rgba(0, 184, 169, 0.12);
+    color: #008C82;
 }
 
 .badge-coral {
-    background: #FFE0D9;
-    color: #B84A35;
+    background: rgba(155, 206, 38, 0.15);
+    color: #5A8C00;
 }
 
 .badge-yellow {
@@ -785,7 +784,7 @@ section {
 
 .section-label {
     font-size: 0.75rem;
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
     font-weight: 600;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -816,9 +815,9 @@ section {
 }
 
 .how-i-work .section-title .highlight {
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
     font-weight: 700;
-    border-bottom: 3px solid var(--zigzag-pink);
+    border-bottom: 3px solid var(--oy-green);
     padding-bottom: 2px;
 }
 
@@ -958,9 +957,9 @@ section {
 
 .project-index {
     font-size: 1rem;
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
     font-weight: 700;
-    background: var(--zigzag-pink-light);
+    background: var(--oy-green-bg);
     padding: 6px 12px;
     border-radius: var(--radius-sm);
     letter-spacing: 0.05em;
@@ -1013,7 +1012,7 @@ section {
 }
 
 .project-summary strong {
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
     font-weight: 700;
 }
 
@@ -1035,8 +1034,8 @@ section {
     padding: 8px 16px;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-accent);
-    background: var(--zigzag-pink-light);
-    color: var(--zigzag-pink);
+    background: var(--oy-green-bg);
+    color: var(--oy-green);
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.02em;
@@ -1044,9 +1043,9 @@ section {
 }
 
 .chip:hover {
-    background: var(--zigzag-pink);
+    background: var(--oy-green);
     color: white;
-    border-color: var(--zigzag-pink);
+    border-color: var(--oy-green);
 }
 
 .strengths-note {
@@ -1137,8 +1136,8 @@ section {
     font-weight: 700;
     letter-spacing: 0.1em;
     margin-bottom: 16px;
-    color: var(--zigzag-pink);
-    background: var(--zigzag-pink-light);
+    color: var(--oy-green);
+    background: var(--oy-green-bg);
     padding: 4px 10px;
     border-radius: var(--radius-sm);
 }
@@ -1187,8 +1186,8 @@ section {
     margin: 0 0 16px 0;
     padding: 20px 24px;
     border-radius: var(--radius-md);
-    background: var(--zigzag-pink-light);
-    border-left: 4px solid var(--zigzag-pink);
+    background: var(--oy-green-bg);
+    border-left: 4px solid var(--oy-green);
     color: var(--text);
     font-size: 0.95rem;
     font-weight: 600;
@@ -1395,22 +1394,22 @@ section {
     align-items: center;
     gap: 12px;
     padding: 12px 20px;
-    background: var(--zigzag-pink-light);
+    background: var(--oy-green-bg);
     border: 1px solid var(--border-accent);
     border-radius: var(--radius-sm);
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
     transition: var(--transition);
 }
 
 .flow-step:hover {
-    background: var(--zigzag-pink);
+    background: var(--oy-green);
     color: white;
 }
 
 .flow-arrow {
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
     font-size: 1.2rem;
 }
 
@@ -1799,7 +1798,7 @@ section {
 .brand-metric .metric-value {
     font-size: 1.3rem;
     font-weight: 700;
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
 }
 
 .brand-metric .metric-desc {
@@ -1828,7 +1827,7 @@ section {
     padding: 16px 20px;
     background: var(--bg-subtle);
     border-radius: var(--radius-md);
-    border-left: 3px solid var(--zigzag-pink);
+    border-left: 3px solid var(--oy-green);
 }
 
 .method-step {
@@ -2426,7 +2425,7 @@ section {
 }
 
 .philosophy-item:hover {
-    border-color: var(--zigzag-pink);
+    border-color: var(--oy-green);
     box-shadow: var(--shadow-accent);
 }
 
@@ -2434,7 +2433,7 @@ section {
     font-size: 0.85rem;
     font-weight: 700;
     color: white;
-    background: var(--zigzag-pink);
+    background: var(--oy-green);
     padding: 6px 12px;
     border-radius: var(--radius-sm);
     flex-shrink: 0;
@@ -2540,10 +2539,10 @@ section {
     font-size: 0.75rem;
     font-weight: 600;
     padding: 4px 12px;
-    background: var(--zigzag-pink-light);
+    background: var(--oy-green-bg);
     border: 1px solid var(--border-accent);
     border-radius: var(--radius-sm);
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
 }
 
 .timeline-achievements,
@@ -2784,7 +2783,7 @@ section {
 }
 
 .contribution-card:hover {
-    border-color: var(--zigzag-pink);
+    border-color: var(--oy-green);
     transform: translateY(-4px);
     box-shadow: var(--shadow-accent);
 }
@@ -2792,14 +2791,14 @@ section {
 .contribution-icon {
     font-size: 2rem;
     margin-bottom: 16px;
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
 }
 
 .contribution-card h4 {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 12px;
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
 }
 
 .contribution-card > p {
@@ -2810,7 +2809,7 @@ section {
 }
 
 .contribution-card strong {
-    color: var(--zigzag-pink);
+    color: var(--oy-green);
 }
 
 .contribution-proof {
@@ -2992,8 +2991,8 @@ section {
 }
 
 .contact-description em {
-    color: var(--zigzag-pink);
-    background: linear-gradient(transparent 60%, var(--zigzag-pink-light) 60%);
+    color: var(--oy-green);
+    background: linear-gradient(transparent 60%, var(--oy-green-bg) 60%);
     padding: 0 6px;
     border-radius: 4px;
     font-style: normal;
@@ -3019,8 +3018,8 @@ section {
 }
 
 .contact-link:hover {
-    border-color: var(--zigzag-pink);
-    background: var(--zigzag-pink-light);
+    border-color: var(--oy-green);
+    background: var(--oy-green-bg);
     box-shadow: var(--shadow-accent);
 }
 
@@ -3445,8 +3444,8 @@ section {
     font-weight: 500;
     padding: 5px 14px;
     border-radius: 16px;
-    background: var(--zigzag-purple-light);
-    color: var(--zigzag-purple);
+    background: var(--oy-green-bg);
+    color: var(--oy-mint);
 }
 
 .dig-action {
@@ -3809,7 +3808,7 @@ section {
     left: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(180deg, var(--zigzag-pink), var(--zigzag-purple));
+    background: linear-gradient(180deg, var(--oy-green), var(--oy-mint));
     opacity: 0;
     transition: var(--transition);
 }
@@ -3910,7 +3909,7 @@ section {
 
 .strategy-flow-arrow .material-symbols-outlined {
     font-size: 20px;
-    color: var(--zigzag-pink-50);
+    color: var(--oy-green-light);
 }
 
 .strategy-result {
@@ -3918,7 +3917,7 @@ section {
     align-items: center;
     gap: 8px;
     padding: 14px 20px;
-    background: linear-gradient(135deg, var(--zigzag-pink-light), var(--zigzag-purple-light));
+    background: linear-gradient(135deg, var(--oy-green-bg), var(--oy-green-bg));
     border-radius: var(--radius-md);
     font-size: 0.85rem;
     font-weight: 600;
@@ -4587,4 +4586,127 @@ section {
     .career-quick-stats {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+
+/* =============================================
+   올리브영 전용 오버라이드 스타일
+   ============================================= */
+
+/* 올리브영 로고/네비게이션 어센트 */
+.logo {
+    color: var(--oy-green) !important;
+    font-weight: 800 !important;
+}
+
+.nav-menu a:hover {
+    color: var(--oy-green) !important;
+    background: var(--oy-green-bg) !important;
+}
+
+/* 올리브영 스타일 CTA 버튼 */
+.btn-primary,
+.hero-cta-btn,
+.cta-btn {
+    background: var(--oy-green) !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 24px !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.btn-primary:hover,
+.hero-cta-btn:hover,
+.cta-btn:hover {
+    background: var(--oy-green-dark) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(67, 176, 42, 0.25);
+}
+
+/* 올리브영 스타일 카드 */
+.toc-cat-card {
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.toc-cat-card:hover {
+    box-shadow: 0 12px 40px rgba(67, 176, 42, 0.15);
+}
+
+/* 올리브영 스타일 pill 뱃지 */
+.hero-kw {
+    border-radius: 20px;
+    border-color: var(--oy-green-bg-medium);
+    background: var(--oy-green-bg);
+}
+
+/* 올리브영 스타일 타임라인 액센트 */
+.timeline-dot,
+.timeline-number {
+    background: var(--oy-green) !important;
+}
+
+/* 올리브영 스타일 스킬 카드 */
+.skill-card:hover {
+    border-color: var(--oy-green);
+    box-shadow: 0 4px 20px rgba(67, 176, 42, 0.12);
+}
+
+/* 올리브영 스타일 contribution 카드 */
+.contribution-card:hover {
+    border-color: var(--oy-green);
+    box-shadow: 0 8px 32px rgba(67, 176, 42, 0.1);
+}
+
+/* 올리브영 스타일 footer */
+.footer {
+    background: #F7F7F7;
+    border-top: 1px solid #E5E5E5;
+}
+
+/* 올리브영 스타일 pulse-glow */
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(67, 176, 42, 0.3); }
+    50% { box-shadow: 0 0 0 8px rgba(67, 176, 42, 0); }
+}
+
+/* 올리브영 스타일 섹션 배경 */
+.section-alternate,
+#about,
+#skills {
+    background: #F7F7F7;
+}
+
+/* 올리브영 스타일 스크롤바 */
+::-webkit-scrollbar-thumb {
+    background: var(--oy-green);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--oy-green-dark);
+}
+
+/* 카테고리 히어로 올리브영 */
+.cat-hero {
+    background: linear-gradient(135deg, #F0F9ED 0%, #E8F5E2 40%, #FFFFFF 100%) !important;
+}
+.cat-hero-pill {
+    background: var(--oy-green) !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+}
+
+/* 프로젝트 라벨/뱃지 올리브영 */
+.detail-label {
+    color: var(--oy-green);
+}
+.brand-metric .metric-value {
+    color: var(--oy-green);
+}
+
+/* 올리브영 스타일 링크 */
+a {
+    color: var(--oy-green);
+}
+a:hover {
+    color: var(--oy-green-dark);
 }
