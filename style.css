@@ -4238,6 +4238,17 @@ section {
     margin-bottom: 16px;
 }
 
+.showcase-item.doc-item {
+    padding-top: 70%;
+    background: #fff;
+}
+@supports (aspect-ratio: 16 / 10) {
+    .showcase-item.doc-item {
+        aspect-ratio: 16 / 10;
+        padding-top: 0;
+    }
+}
+
 /* 구축 내용 카드 그리드 */
 .what-i-built {
     margin-top: 40px;
