@@ -4239,15 +4239,20 @@ section {
 }
 
 .showcase-item.doc-item {
-    padding-top: 56.25%;
+    padding-top: 56.25% !important;
+    aspect-ratio: unset !important;
+    height: 0 !important;
+    display: block !important;
     background: #fff;
 }
 .showcase-item.doc-item img {
-    position: absolute;
+    position: absolute !important;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
     object-fit: contain;
     background: #fff;
 }
