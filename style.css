@@ -4826,3 +4826,12 @@ a:hover {
     line-height: 1.6;
     margin: 0;
 }
+
+.skill-sub {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.75rem;
+    color: var(--text-sub);
+    letter-spacing: 0.02em;
+    opacity: 0.8;
+}
