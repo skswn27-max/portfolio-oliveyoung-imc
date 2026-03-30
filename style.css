@@ -4835,3 +4835,24 @@ a:hover {
     letter-spacing: 0.02em;
     opacity: 0.8;
 }
+
+.toc-guide-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px auto 8px;
+    padding: 10px 24px;
+    max-width: 480px;
+    background: rgba(67, 176, 42, 0.08);
+    border: 1px solid rgba(67, 176, 42, 0.2);
+    border-radius: 40px;
+    font-size: 0.85rem;
+    color: var(--oy-green-dark);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+.toc-guide-banner .material-symbols-outlined {
+    font-size: 1.1rem;
+    color: var(--oy-green);
+}
