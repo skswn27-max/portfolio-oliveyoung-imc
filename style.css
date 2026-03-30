@@ -4239,14 +4239,15 @@ section {
 }
 
 .showcase-item.doc-item {
-    padding-top: 70%;
+    padding-top: 0;
+    height: auto;
     background: #fff;
 }
-@supports (aspect-ratio: 16 / 10) {
-    .showcase-item.doc-item {
-        aspect-ratio: 16 / 10;
-        padding-top: 0;
-    }
+.showcase-item.doc-item img {
+    position: static;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* 구축 내용 카드 그리드 */
