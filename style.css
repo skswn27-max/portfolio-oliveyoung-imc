@@ -4836,23 +4836,41 @@ a:hover {
     opacity: 0.8;
 }
 
-.toc-guide-banner {
+.toc-guide-hint {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+    margin: 16px 0 0;
+    letter-spacing: 0.02em;
+}
+
+.toc-cat-arrow {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    margin: 20px auto 8px;
-    padding: 10px 24px;
-    max-width: 480px;
-    background: rgba(67, 176, 42, 0.08);
-    border: 1px solid rgba(67, 176, 42, 0.2);
-    border-radius: 40px;
-    font-size: 0.85rem;
-    color: var(--oy-green-dark);
-    font-weight: 500;
-    letter-spacing: -0.01em;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: all 0.3s ease;
 }
-.toc-guide-banner .material-symbols-outlined {
-    font-size: 1.1rem;
-    color: var(--oy-green);
+.toc-cat-arrow .material-symbols-outlined {
+    font-size: 1rem;
+    color: #fff;
+}
+.toc-cat-card {
+    position: relative;
+}
+.toc-cat-card:hover .toc-cat-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+.toc-cat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
 }
